@@ -1,0 +1,337 @@
+body{
+    margin:0;
+}
+
+
+/*For the navigation bar */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#27496d;
+    color:white;
+    z-index: 1;
+}
+/*For the navigation list */
+header ul{
+    margin-left:50%;
+    padding:5px;
+    list-style-type: none;
+    display: flex;
+}
+li{
+    margin-right:40px;
+    padding:0px;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*For the navigation bar links */
+a:visited, a:link{
+    color:white;
+    text-decoration: none;
+}
+a:hover, a:active {
+   opacity: 0.8;
+   color: #00909e;
+   
+}
+/*margin-top is set to make some gap because of navigation bar */
+section{
+    margin-top:100px;
+}
+.abouttextfont{
+    margin-left:10%;
+    font-size: 25px;
+    font-family:cursive;
+    font-style:italic;
+}
+.textfont{
+    font-size: 30px;
+    font-family: Courier;
+    font-weight: 200;
+}
+
+
+/*For storing the images of skills and their description */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Font of skills images*/
+div img{
+    
+    width:300px;
+    height: 200px;
+    border-radius: 1cm;
+}
+/*
+     When hover, skills images get little bit larger
+                border appears and opacity decreases.
+ */
+div img:hover{
+    transform: scale(1.2,1.2);
+    opacity: 0.8;
+    border: 1px solid black;
+}
+/*This is for the heading of skill image*/
+.headingimages{
+    width:400px;
+    height:100px;
+    size: cover;
+    padding: 1px;
+    border: 2px solid #ddd;
+}
+/*For use in div tag (Skills images) */
+.marginleft{
+    margin-left: 40%;
+}
+/*This id selector is used only for about image at first */
+#Myimage{
+    width:300px;
+    height: 300px;
+    border-radius: 1cm;
+}
+/*This id selector is used only for about image at first*/
+#Myimage1{
+    width:500px;
+    height:100px;
+}
+/*For the storing certificates */
+.certificatecontainer div{
+    display: inline-block;
+    margin-left:10px;
+}
+.certificateimage{
+    width:500px;
+    height:400px;
+}
+
+/*Fonts of Contact */
+.contactfont{
+    font-size: 25px;
+    font-family: Courier;
+    font-weight: 200;
+    background-color: #00909e;
+    color:#dae1e7;
+}
+.contactimage{
+    margin-left:80px;
+}
+.contactimage div{
+    display:inline-block;
+    margin-left:20px;
+}
+.contactimage div img{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+/*For use as the container to write the introduction */
+fieldset{
+    margin:30px;
+    margin-top:0px;
+    padding:10px;
+    widows: 100%;
+}
+
+/*Responsive(First breakpoint)*/
+@media screen and (max-width:1105px){
+    li{
+        font-size:20px;
+    }
+    .abouttextfont{
+        font-size: 20px;
+    }
+    .textfont{
+        font-size: 25px;
+    }
+    div img{
+    
+        width:250px;
+        height: 150px;
+        border-radius: 1cm;
+    }
+    .certificateimage{
+        width:450px;
+        height:350px;
+    }
+    .headingimages{
+        width:350px;
+        height:80px;
+    }
+    .contactfont{
+        font-size: 20px;
+    }
+    #Myimage{
+        width:250px;
+        height: 250px;
+    }
+    #Myimage1{
+        width:450px;
+        height:80px;
+    }
+  }
+
+/*Responsive(Second breakpoint)*/
+@media screen and (max-width:830px){
+    header ul{
+        margin-left:40%;
+    }
+    li{
+        font-size:15px;
+    }
+    .abouttextfont{
+        font-size: 15px;
+    }
+    .textfont{
+        font-size: 20px;
+    }
+    div img{
+    
+        width:200px;
+        height: 100px;
+    }
+    .certificateimage{
+        width:350px;
+        height:250px;
+    }
+    .headingimages{
+        width:250px;
+        height:60px;
+    }
+    .contactfont{
+        font-size: 15px;
+    }
+    #Myimage{
+        width:200px;
+        height: 200px;
+    }
+    #Myimage1{
+        width:400px;
+        height:70px;
+    }
+  }
+
+  /*Responsive(Third breakpoint)*/
+@media screen and (max-width:580px){
+    header ul{
+        margin-left:35%;
+    }
+    .marginleft{
+        margin-left: 30%;
+    }
+    .contactimage div img{
+        width:20px;
+        height:20px;
+    }
+    .abouttextfont{
+        font-size: 10px;
+    }
+  }
+
+  /*Responsive(Fourth breakpoint)*/
+@media screen and (max-width:540px){
+    header ul{
+        margin-left:30%;
+    }
+   
+   
+    div img{
+    
+        width:150px;
+        height: 70px;
+    }
+    .certificateimage{
+        width:250px;
+        height:200px;
+    }
+    .headingimages{
+        width:150px;
+        height:40px;
+    }
+    
+    #Myimage{
+        width:150px;
+        height: 150px;
+    }
+    #Myimage1{
+        width:350px;
+        height:60px;
+    }
+  }
+
+    /*Responsive(Fifth breakpoint)*/
+@media screen and (max-width:500px){
+    header ul{
+        margin-left:20%;
+    }
+    #Myimage{
+        width:120px;
+        height: 120px;
+    }
+    #Myimage1{
+        width:250px;
+        height:60px;
+    }
+  }
+
+    /*Responsive(Sixth breakpoint)*/
+    @media screen and (max-width:440px){
+        header ul{
+            margin-left:5%;
+        }
+        #Myimage{
+            width:120px;
+            height: 120px;
+        }
+        #Myimage1{
+            width:250px;
+            height:60px;
+        }
+        .certificateimage{
+            width:200px;
+            height:150px;
+        }
+        .marginleft{
+            margin-left: 20%;
+        }
+        .textfont{
+            font-size: 15px;
+        }
+      }
+
+     /*Responsive(Sixth breakpoint)*/
+    @media screen and (max-width:372px){
+        li{
+            margin-right:20px;
+        }
+        #Myimage{
+            width:100px;
+            height: 100px;
+        }
+        #Myimage1{
+            width:200px;
+            height:40px;
+        }
+        .certificateimage{
+            width:170px;
+            height:110px;
+        }
+        .marginleft{
+            margin-left: 20%;
+        }
+        .textfont{
+            font-size: 15px;
+        }
+        .abouttextfont{
+            font-size: 8px;
+            font-weight: bold;
+        }
+      }
+
+     
